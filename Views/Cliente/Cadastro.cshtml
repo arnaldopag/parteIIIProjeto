@@ -1,35 +1,46 @@
+@model Cliente
 @{
     ViewData["Title"] = "Cadastro Cliente";
 }
 <h1>Cadastro De Clientes</h1>
-<form action="Cadastro" method="POST">
+<asp-form action="Cadastro" method="POST">
     <div class="mb-3">
-        <label for="nome" class="form-label">Nome: </label>
-        <input type="text" id="nome" />
+        <label asp-for="Nome" class="form-label">Nome: </label>
+        <input asp-for="Nome" />
     </div>
     <div class="mb-3">
-        <label for="cpf" class="form-label">Cpf:</label>
-        <input type="text" id="cpf" />
+        <label asp-for="Login" class="form-label">Login: </label>
+        <input asp-for="Login" />
     </div>
     <div class="mb-3">
-        <label for="identidade" class="form-label">RG:</label>
-        <input type="text" id="identidade" />
+        <label asp-for="Senha" class="form-label">Senha: </label>
+        <input asp-for="Senha" />
     </div>
     <div class="mb-3">
-        <label for="login" class="form-label">Login: </label>
-        <input type="text" id="login" />
+        <label asp-for="NumeroConta" class="form-label">Numero Conta: </label>
+        <input asp-for="NumeroConta" />
     </div>
     <div class="mb-3">
-        <label for="senha" class="form-label">Senha: </label>
-        <input type="password" id="senha" />
+        <label asp-for="Agencia" class="form-label">Agencia: </label>
+        <input asp-for="Agencia" />
     </div>
     <div class="mb-3">
-        <label for="dataNascimento" class="form-label">Data Nascimento</label>
-        <input type="date" id="dataNascimento" />
+        <label asp-for="Cpf" class="form-label">Cpf: </label>
+        <input asp-for="Cpf" />
     </div>
     <div class="mb-3">
-        <button value="Enviar" type="submit" class="btn btn-outline-primary">
-            Enviar
-        </button>
+        <label asp-for="Rg" class="form-label">RG: </label>
+        <input asp-for="Rg" />
     </div>
-</form>
+    <div class="mb-3">
+        <label asp-for="Salario" class="form-label">Salario R$: </label>
+        <input asp-for="Salario" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="DataNascimento" class="form-label">Data Nascimento</label>
+        <input asp-for="DataNascimento" type="date" />
+    </div>
+    <div class="mb-3">
+        <input type="Submit" value="Enviar" class="btn btn-outline-primary">
+    </div>
+</asp-form>

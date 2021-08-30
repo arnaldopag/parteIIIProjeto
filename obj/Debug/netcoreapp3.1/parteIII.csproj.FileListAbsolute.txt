@@ -35,3 +35,4 @@ C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcorea
 C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\parteIII.csproj.CopyComplete
 C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Banco\Login.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Cadastro.cshtml.g.cs
+C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Banco\Produtos.cshtml.g.cs

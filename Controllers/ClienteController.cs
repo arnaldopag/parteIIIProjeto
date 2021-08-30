@@ -22,7 +22,7 @@ namespace parteIII.Controllers
         public IActionResult Cadastro(Cliente cliente1)
         {
             Conta.cliente.addClient(cliente1);
-
+            ViewBag.Mensagem = "Cadastro Realizado";
             return View();
 
         }

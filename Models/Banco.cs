@@ -9,17 +9,32 @@ namespace parteIII.Models
         {
             clientes.Add(novoCliente);
         }
-        public void sacar(Cliente clienteSaque)
+        public string sacar(Cliente clienteSaque, double valorSaque)
         {
+            if (valorSaque > clienteSaque.Saldo)
+            {
+                string mensagemFalha = "----Saldo Insuficiente----\n";
+                mensagemFalha += "Saldo atual: " + clienteSaque.Saldo + "\n";
+                mensagemFalha += "Valor Saque: " + valorSaque + "\n";
+                return mensagemFalha;
+            }
+            clienteSaque.Saldo -= valorSaque;
+            string Mensagem = "----Saque Realizado----\n";
+            Mensagem += "Saldo atual: " + clienteSaque.Saldo + "\n";
+            Mensagem += "Valor Saque: " + valorSaque + "\n";
+            return Mensagem;
 
         }
-        public void depositar(Cliente clienteDeposito, double valorDeposito)
+        public string depositar(Cliente clienteDeposito, double valorDeposito)
         {
 
             clienteDeposito.Saldo += valorDeposito;
+            string mensagemDeposito = "---Deposito Realizado---\n";
+            mensagemDeposito += "Valor deposito: R$" + valorDeposito + "\n";
+            mensagemDeposito += "Saldo: R$" + clienteDeposito.Saldo + "\n";
+
+            return mensagemDeposito;
 
         }
-
-
     }
 }
