@@ -1,16 +1,23 @@
+@model Cliente
+
 @{
-    ViewData["Title"] = "Cadastro Cliente";
+    ViewData["Title"] = "Login";
 }
-<form action="Login" method="POST" class="row g-3 align-items-center">
-    <div class="col-auto">
-        <label for="login" class="col-form-label">Login</label>
-        <input type="text" class="col-form-control" id="login" />
-    </div>
-    <div class="col-auto">
-        <label for="senha" class="col-form-label">Password</label>
-        <input type="password" class="col-form-control" id="senha" />
-    </div>
-    <div class="col-auto">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+
+<form method="POST" asp-action="Login">
+    <p>
+        <label asp-for="Login">Informe seu login: </label>
+        <input asp-for="Login">
+    </p>
+    <p>
+        <label asp-for="Senha">Informe sua senha: </label>
+        <input asp-for="Senha" type="password">
+    </p>
+    <p>
+        <input type="submit" value="Entrar">
+    </p>
 </form>
+
+<p>
+    @ViewBag.Mensagem
+</p>

@@ -15,5 +15,11 @@ namespace parteIII.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login()
+        {
+            return View();
+
+        }
     }
 }

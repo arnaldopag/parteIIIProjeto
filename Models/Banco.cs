@@ -4,7 +4,19 @@ namespace parteIII.Models
     public class Banco
     {
         private static List<Cliente> clientes = new List<Cliente>();
+        private string login { get; set; }
+        private string senha { get; set; }
+        public string Login
+        {
+            get { return login; }
+            set { this.login = value; }
+        }
+        public string Senha
+        {
+            get { return senha; }
+            set { this.senha = value; }
 
+        }
         public void addClient(Cliente novoCliente)
         {
             clientes.Add(novoCliente);
@@ -34,6 +46,16 @@ namespace parteIII.Models
             mensagemDeposito += "Saldo: R$" + clienteDeposito.Saldo + "\n";
 
             return mensagemDeposito;
+
+        }
+        public bool verificarLogin(Cliente clienteLogin)
+        {
+            var Cliente = clientes.Find(acesso => acesso.Login == this.login);
+            if (Cliente != null)
+            {
+                return true;
+            }
+            return false;
 
         }
     }
