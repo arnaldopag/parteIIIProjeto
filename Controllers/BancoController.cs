@@ -27,11 +27,12 @@ namespace parteIII.Controllers
                 ViewBag.Mensagem = "Erro no Login";
                 return View();
             }
-            //HttpContext.Session.SetInt32("idCliente", clienteAcesso.Id);
-            //HttpContext.Session.SetString("nomeCliente", clienteAcesso.Nome);
-
             return RedirectToAction("Acesso", "Cliente");
 
+        }
+        public IActionResult Produtos()
+        {
+            return View();
         }
     }
 }

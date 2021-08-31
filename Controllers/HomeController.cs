@@ -22,8 +22,20 @@ namespace parteIII.Controllers
         {
             return View();
         }
+        public IActionResult Institucional()
+        {
+            return View();
+        }
+        public IActionResult Trabalhe()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Trabalhe(Candidato candidato)
+        {
 
-
+            return View();
+        }
 
     }
 }

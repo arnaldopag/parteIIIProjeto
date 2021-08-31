@@ -1,0 +1,36 @@
+@model Candidato;
+@{
+    ViewData["Title"] = "Trabalhe";
+}
+
+<body>
+    <h1>Trabalhe Conosco</h1>
+    <form asp-action="POST">
+        <div class="mb-3">
+            <label asp-for="Nome" class="form-label">Nome: </label>
+            <input asp-for="Nome" />
+        </div>
+        <div>
+            <label asp-for="Email" class="form-label">Email: </label>
+            <input asp-for="Email" />
+        </div>
+        <div>
+            <label asp-for="Fone" class="form-label">Fone: </label>
+            <input asp-for="Fone" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="DataNascimento" class="form-label">Data Nascimento:</label>
+            <input type="date" asp-for="DataNascimento" />
+        </div>
+        <div class="mb-3">
+            <label for="corriculo" class="form-label">Currículo</label>
+            <input type="file" id="curriculo" />
+        </div>
+
+        <div class="mb-3">
+            <button value="Enviar" type="Submit" class="btn btn-outline-primary">
+                Enviar
+            </button>
+        </div>
+    </form>
+</body>

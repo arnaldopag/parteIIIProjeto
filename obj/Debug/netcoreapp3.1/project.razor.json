@@ -14402,6 +14402,11 @@
   "RootNamespace": "parteIII",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Home\\Institucional.cshtml",
+      "TargetPath": "Views\\Home\\Institucional.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Banco\\Produtos.cshtml",
       "TargetPath": "Views\\Banco\\Produtos.cshtml",
       "FileKind": "mvc"
@@ -14429,6 +14434,11 @@
     {
       "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Acesso.cshtml",
       "TargetPath": "Views\\Cliente\\Acesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Home\\Trabalhe.cshtml",
+      "TargetPath": "Views\\Home\\Trabalhe.cshtml",
       "FileKind": "mvc"
     },
     {
