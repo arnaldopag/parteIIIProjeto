@@ -4,7 +4,7 @@ namespace parteIII.Models
 {
     public class Cliente
     {
-        private int id { get; set; }
+        private int id { get;  }
         private string nome { get; set; }
         private string email { get; set; }
         private string fone { get; set; }

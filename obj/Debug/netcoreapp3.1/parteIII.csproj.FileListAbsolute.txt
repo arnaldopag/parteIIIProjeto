@@ -39,3 +39,46 @@ C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcorea
 C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Acesso.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Home\Institucional.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projeto senac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Home\Trabalhe.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.exe
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.deps.json
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.runtimeconfig.json
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.runtimeconfig.dev.json
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.dll
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.pdb
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.Views.dll
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\parteIII.Views.pdb
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.csprojAssemblyReference.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.AssemblyInfoInputs.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.AssemblyInfo.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.csproj.CoreCompileInputs.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.RazorAssemblyInfo.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.RazorAssemblyInfo.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.TagHelpers.input.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.TagHelpers.output.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.RazorCoreGenerate.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Banco\Login.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Banco\Produtos.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Acesso.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Cadastro.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Depositar.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Sacar.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Institucional.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Trabalhe.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.RazorTargetAssemblyInfo.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.RazorTargetAssemblyInfo.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.Views.pdb
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\staticwebassets\parteIII.StaticWebAssets.Manifest.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\staticwebassets\parteIII.StaticWebAssets.xml
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.dll
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.pdb
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.genruntimeconfig.cache
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.csproj.CopyComplete
