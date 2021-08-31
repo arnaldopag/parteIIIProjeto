@@ -14417,6 +14417,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Depositar.cshtml",
+      "TargetPath": "Views\\Cliente\\Depositar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Sacar.cshtml",
+      "TargetPath": "Views\\Cliente\\Sacar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

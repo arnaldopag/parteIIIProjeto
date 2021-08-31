@@ -1,0 +1,13 @@
+@model Banco;
+@{
+    ViewData["Title"] = "Depositar";
+}
+<form asp-action="Depositar" method="post">
+    <div class="mb-3">
+        <label asp-for="Deposito" class="form-label">Valor Deposito: </label>
+        <input asp-for="Deposito">
+    </div>
+    <div class="mb-3">
+        <input type="Submit" value="Enviar" class="btn btn-outline-primary">
+    </div>
+</form>

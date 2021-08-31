@@ -6,6 +6,8 @@ namespace parteIII.Models
         private static List<Cliente> clientes = new List<Cliente>();
         private string login { get; set; }
         private string senha { get; set; }
+        private double deposito { get; set; }
+        private double saque { get; set; }
         public string Login
         {
             get { return login; }
@@ -17,32 +19,42 @@ namespace parteIII.Models
             set { this.senha = value; }
 
         }
+        public double Deposito
+        {
+            get { return deposito; }
+            set { this.deposito = value; }
+        }
+        public double Saque
+        {
+            get { return saque; }
+            set { this.saque = value; }
+        }
         public void addClient(Cliente novoCliente)
         {
             clientes.Add(novoCliente);
         }
-        public string sacar(Cliente clienteSaque, double valorSaque)
+        public string sacar(Cliente clienteSaque)
         {
-            if (valorSaque > clienteSaque.Saldo)
+            if (this.Saque > clienteSaque.Saldo)
             {
                 string mensagemFalha = "----Saldo Insuficiente----\n";
                 mensagemFalha += "Saldo atual: " + clienteSaque.Saldo + "\n";
-                mensagemFalha += "Valor Saque: " + valorSaque + "\n";
+                mensagemFalha += "Valor Saque: " + this.Saque + "\n";
                 return mensagemFalha;
             }
-            clienteSaque.Saldo -= valorSaque;
+            clienteSaque.Saldo -= this.Saque;
             string Mensagem = "----Saque Realizado----\n";
             Mensagem += "Saldo atual: " + clienteSaque.Saldo + "\n";
-            Mensagem += "Valor Saque: " + valorSaque + "\n";
+            Mensagem += "Valor Saque: " + this.Saque + "\n";
             return Mensagem;
 
         }
-        public string depositar(Cliente clienteDeposito, double valorDeposito)
+        public string depositar(Cliente clienteDeposito)
         {
 
-            clienteDeposito.Saldo += valorDeposito;
+            clienteDeposito.Saldo += this.Deposito;
             string mensagemDeposito = "---Deposito Realizado---\n";
-            mensagemDeposito += "Valor deposito: R$" + valorDeposito + "\n";
+            mensagemDeposito += "Valor deposito: R$" + this.Deposito + "\n";
             mensagemDeposito += "Saldo: R$" + clienteDeposito.Saldo + "\n";
 
             return mensagemDeposito;
