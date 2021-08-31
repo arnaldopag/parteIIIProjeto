@@ -26,5 +26,9 @@ namespace parteIII.Controllers
             return View();
 
         }
+        public IActionResult Acesso()
+        {
+            return View();
+        }
     }
 }

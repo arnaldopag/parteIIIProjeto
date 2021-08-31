@@ -48,14 +48,14 @@ namespace parteIII.Models
             return mensagemDeposito;
 
         }
-        public bool verificarLogin(Cliente clienteLogin)
+        public Cliente verificarLogin(Cliente clienteLogin)
         {
-            var Cliente = clientes.Find(acesso => acesso.Login == this.login);
-            if (Cliente != null)
+            Cliente clientelogin = clientes.Find(acesso => acesso.Login == this.login);
+            if (clienteLogin != null)
             {
-                return true;
+                return clienteLogin;
             }
-            return false;
+            return null;
 
         }
     }

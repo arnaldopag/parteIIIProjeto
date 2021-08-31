@@ -1,9 +1,9 @@
-@model Cliente
+@model Cliente;
 @{
     ViewData["Title"] = "Cadastro Cliente";
 }
 <h1>Cadastro De Clientes</h1>
-<asp-form action="Cadastro" method="POST">
+<form asp-action="Cadastro" method="POST">
     <div class="mb-3">
         <label asp-for="Nome" class="form-label">Nome: </label>
         <input asp-for="Nome" />
@@ -46,4 +46,4 @@
     <p>
         @ViewBag.Mensagem
     </p>
-</asp-form>
+</form>

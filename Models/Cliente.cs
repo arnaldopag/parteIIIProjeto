@@ -16,6 +16,10 @@ namespace parteIII.Models
         private int agencia { get; set; }
         private double saldo { get; set; }
 
+        public int Id
+        {
+            get { return id; }
+        }
         public string Nome
         {
             get { return nome; }

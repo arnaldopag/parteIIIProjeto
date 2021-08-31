@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Acesso.cshtml",
+      "TargetPath": "Views\\Cliente\\Acesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
