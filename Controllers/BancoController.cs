@@ -19,17 +19,19 @@ namespace parteIII.Controllers
         [HttpPost]
         public IActionResult Login(Cliente clienteLogin)
         {
-            Cliente clienteAcesso = new Cliente();
-
-            clienteAcesso = Conta.cliente.verificarLogin(clienteLogin);
-            if (clienteAcesso == null)
+            var loginCliente = new BancoRepository();
+            loginCliente.Login(clienteLogin);
+            if (loginCliente == null)
             {
-                ViewBag.Mensagem = "Erro no Login";
+                ViewBag.Mensagem = "Falha no login";
                 return View();
             }
-            return RedirectToAction("Acesso", "Cliente");
+            HttpContext.Session.SetInt32("IdCliente", loginCliente.Id);
+            HttpContext.Session.SetString("NomeCliente", loginCliente.Nome);
 
+            return RedirectToAction("Acesso", "Cliente");
         }
+
         public IActionResult Produtos()
         {
             return View();

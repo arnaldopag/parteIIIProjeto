@@ -6,7 +6,9 @@ namespace parteIII.Models
         private int numeroConta { get; set; }
         private int agencia { get; set; }
         private double saldo { get; set; }
+
         public int Id_conta => id_conta;
+
         public int NumeroConta
         {
             get => numeroConta;
