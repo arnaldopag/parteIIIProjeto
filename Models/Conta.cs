@@ -1,11 +1,26 @@
 namespace parteIII.Models
 {
-    public static class Conta
+    public class Conta
     {
-        public static Banco cliente { get; set; }
-        static Conta()
+        private int id_conta { get; }
+        private int numeroConta { get; set; }
+        private int agencia { get; set; }
+        private double saldo { get; set; }
+        public int Id_conta => id_conta;
+        public int NumeroConta
         {
-            cliente = new Banco();
+            get => numeroConta;
+            set => numeroConta = value;
+        }
+        public int Agencia
+        {
+            get => agencia;
+            set => agencia = value;
+        }
+        public double Saldo
+        {
+            get => saldo;
+            set => saldo = value;
         }
     }
 }

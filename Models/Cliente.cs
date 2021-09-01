@@ -14,9 +14,7 @@ namespace parteIII.Models
         private string rg { get; set; }
         private double salario { get; set; }
         private DateTime dataNascimento { get; set; }
-        private int numeroConta { get; set; }
-        private int agencia { get; set; }
-        private double saldo { get; set; }
+    
 
         public int Id
         {
@@ -67,21 +65,7 @@ namespace parteIII.Models
             get { return dataNascimento; }
             set { this.dataNascimento = value; }
         }
-        public int NumeroConta
-        {
-            get { return numeroConta; }
-            set { this.numeroConta = value; }
-        }
-        public int Agencia
-        {
-            get { return agencia; }
-            set { this.agencia = value; }
-        }
-        public double Saldo
-        {
-            get { return saldo; }
-            set { this.saldo = value; }
-        }
+      
 
     }
 }
