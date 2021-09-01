@@ -1,23 +1,33 @@
-using parteIII.Models;
-
 namespace parteIII.Models
 {
-    public static class Banco
+    public class Banco
     {
-
-        public static double sacar(double valorSaque)
+        private double valorDeposito { get; set; }
+        private double valorSaque { get; set; }
+        
+        public double ValorDeposito
         {
-            if (valorSaque > Conta.Saldo)
-            {
-                return null;
+            get => valorDeposito;
+            set => valorDeposito = value;
+        }
+        public double ValorSaque
+        {
+            get => valorSaque;
+            set => valorSaque = value;
+        }
+
+        public double Sacar()
+        {
+            if (valorSaque > Conta.Saldo){
+                return -1;
             }
-            double valorFinal = valorSaque - Conta.Saldo;
+            double valorFinal = this.valorSaque - Conta.Saldo;
             return valorFinal;
         }
-        public static string depositar(double valorDeposito)
+        public double Depositar()
         {
-            double valorFinal = valorDeposito + Conta.Saldo;
-            return valorFinal;
+            Conta.Saldo += this.valorDeposito;
+            return Conta.Saldo;
         }
     }
 }

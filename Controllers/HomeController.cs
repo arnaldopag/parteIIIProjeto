@@ -9,8 +9,7 @@ using parteIII.Models;
 
 namespace parteIII.Controllers
 {
-    public class HomeController : Controller
-    {
+    public class HomeController : Controller {
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -25,11 +24,11 @@ namespace parteIII.Controllers
         public IActionResult Institucional()
         {
             return View();
+
         }
-        public IActionResult Trabalhe()
+        public IActionResult Produtos()
         {
             return View();
         }
-
     }
 }

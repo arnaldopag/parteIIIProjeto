@@ -19,8 +19,8 @@ namespace parteIII.Controllers
         public IActionResult CadastrConta(Conta newConta)
         {
             var contaCadastro = new ContaRepository();
-            contaCadastro.Inserir(newConta);
-            return RedirectToAction("Login", "Banco");
+            contaCadastro.Cadastro(newConta);
+            return RedirectToAction("Login", "Cliente");
         }
     }
 }

@@ -28,25 +28,37 @@ namespace parteIII.Controllers
             return RedirectToAction("CadastroConta", "Conta");
 
         }
-        public iActionResult Login()
+        public IActionResult Login()
         {
             return View();
         }
         [HttpPost]
         public IActionResult Login(Cliente clienteLogin)
         {
-            var loginCliente = new ClienteRepository();
-            loginCliente.Login(clienteLogin);
-            if (loginCliente == null)
+            ClienteRepository loginCliente = new ClienteRepository();
+            Cliente clienteValido =  loginCliente.Login(clienteLogin);
+            if (clienteValido == null)
             {
                 ViewBag.Mensagem = "Falha no login";
                 return View();
             }
-            HttpContext.Session.SetInt32("IdCliente", loginCliente.Id);
-            HttpContext.Session.SetString("NomeCliente", loginCliente.Nome);
+            HttpContext.Session.SetInt32("IdCliente", clienteValido.Id);
+            HttpContext.Session.SetString("NomeCliente", clienteValido.Nome);
 
-            return RedirectToAction("Acesso", "Cliente");
+            return RedirectToAction("Acesso");
         }
 
+        public IActionResult Acesso()
+        {
+            return View();
+        }
+        public IActionResult Sacar()
+        {
+            throw new NotImplementedException();
+        }
+        public IActionResult Depositar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

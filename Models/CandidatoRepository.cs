@@ -1,3 +1,4 @@
+using MySqlConnector;
 namespace parteIII.Models
 {
     public class CandidatoRepository
@@ -7,9 +8,8 @@ namespace parteIII.Models
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
-            String QuerySql = "insert into candidato (nome,email,fone,dataNascimento)";
-            QuerySql += "values (@nome,@email,@fone,@dataNascimento)";
-            var comando = new MySqlCommand(QuerySql, conexao);
+            const string querySql = "insert into candidato (nome,email,fone,dataNascimento) VALUES (@nome,@email,@fone,@datanNascimento)";
+            var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@nome", candidato.Nome);
             comando.Parameters.AddWithValue("@email", candidato.Email);
             comando.Parameters.AddWithValue("@fone", candidato.Fone);

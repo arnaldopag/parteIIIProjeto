@@ -13,9 +13,6 @@ namespace parteIII.Controllers
     public class BancoController : Controller{
         
 
-    public IActionResult Produtos()
-        {
-            return View();
-        }
+   
     }
 }

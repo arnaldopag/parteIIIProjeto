@@ -10,23 +10,23 @@ namespace parteIII.Models
 
         public string Nome
         {
-            get { return nome; }
-            set { this.nome = value; }
+            get => nome;
+            set => nome = value; 
         }
         public string Email
         {
-            get { return email; }
-            set { this.email = value; }
+            get => email;
+            set => this.email = value;
         }
         public string Fone
         {
-            get { return fone; }
-            set { this.fone = value; }
+            get => fone;
+            set => this.fone = value;
         }
         public DateTime DataNascimento
         {
-            get { return dataNascimento; }
-            set { this.dataNascimento = value; }
+            get => dataNascimento;
+            set => this.dataNascimento = value;
         }
 
     }
