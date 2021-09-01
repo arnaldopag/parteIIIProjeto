@@ -1,33 +1,42 @@
-namespace parteIII.Models
+using parteIII.Models;
+namespace parteIIIProjeto.Models
 {
     public class Banco
     {
-        private double valorDeposito { get; set; }
-        private double valorSaque { get; set; }
-        
-        public double ValorDeposito
+        namespace parteIII.Models
+    {
+        public class Banco
         {
-            get => valorDeposito;
-            set => valorDeposito = value;
-        }
-        public double ValorSaque
-        {
-            get => valorSaque;
-            set => valorSaque = value;
-        }
+            private double valorDeposito { get; set; }
+            private double valorSaque { get; set; }
 
-        public double Sacar()
-        {
-            if (valorSaque > Conta.Saldo){
-                return -1;
+            public double ValorDeposito
+            {
+                get => valorDeposito;
+                set => valorDeposito = value;
             }
-            double valorFinal = this.valorSaque - Conta.Saldo;
-            return valorFinal;
-        }
-        public double Depositar()
-        {
-            Conta.Saldo += this.valorDeposito;
-            return Conta.Saldo;
+            public double ValorSaque
+            {
+                get => valorSaque;
+                set => valorSaque = value;
+            }
+
+            public double Sacar()
+            {
+                if (valorSaque > Conta.Saldo)
+                {
+                    return -1;
+                }
+                double valorFinal = this.valorSaque - Conta.Saldo;
+                return valorFinal;
+            }
+            public double Depositar()
+            {
+                Conta.Saldo += this.valorDeposito;
+                
+                return Conta.Saldo;
+            }
         }
     }
+}
 }

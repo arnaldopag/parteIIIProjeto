@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\parteIII.csproj",
+  "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\parteIII.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,68 +14402,73 @@
   "RootNamespace": "parteIII",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Home\\Institucional.cshtml",
-      "TargetPath": "Views\\Home\\Institucional.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Banco\\Produtos.cshtml",
-      "TargetPath": "Views\\Banco\\Produtos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Cadastro.cshtml",
-      "TargetPath": "Views\\Cliente\\Cadastro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Depositar.cshtml",
-      "TargetPath": "Views\\Cliente\\Depositar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Sacar.cshtml",
-      "TargetPath": "Views\\Cliente\\Sacar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Cliente\\Acesso.cshtml",
-      "TargetPath": "Views\\Cliente\\Acesso.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Home\\Trabalhe.cshtml",
-      "TargetPath": "Views\\Home\\Trabalhe.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Banco\\Login.cshtml",
-      "TargetPath": "Views\\Banco\\Login.cshtml",
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Home\\Produtos.cshtml",
+      "TargetPath": "Views\\Home\\Produtos.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Home\\Institucional.cshtml",
+      "TargetPath": "Views\\Home\\Institucional.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Cliente\\Depositar.cshtml",
+      "TargetPath": "Views\\Cliente\\Depositar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Cliente\\Sacar.cshtml",
+      "TargetPath": "Views\\Cliente\\Sacar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Candidato\\Trabalhe.cshtml",
+      "TargetPath": "Views\\Candidato\\Trabalhe.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Conta\\CadastroConta.cshtml",
+      "TargetPath": "Views\\Conta\\CadastroConta.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Cliente\\Cadastro.cshtml",
+      "TargetPath": "Views\\Cliente\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\Views\\Cliente\\Acesso.cshtml",
+      "TargetPath": "Views\\Cliente\\Acesso.cshtml",
       "FileKind": "mvc"
     }
   ],
