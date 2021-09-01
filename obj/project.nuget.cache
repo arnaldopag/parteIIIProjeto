@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6WJ9JeoHV7t75lj0i59GyIOK3rsY/UVt4+iJWZMTsv/j2EZg/8v9m+iNg1X7W7z6duHj5ShJ91D6NLv4k7RojQ==",
+  "dgSpecHash": "r7aZOdDaJBBqeg6Hg/15TCFdwEhvhkAOdE5Ynng9U7Uy3pCYeTKjjfTHkchQCkHpCSsXT9b6Kq/c7w3ZEShj0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\dinhu\\OneDrive\\Documentos\\cursoSenac\\projetointegrador\\parte-iii\\parteIIIProjeto\\parteIII.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dinhu\\.nuget\\packages\\mysqlconnector\\1.3.11\\mysqlconnector.1.3.11.nupkg.sha512"
+  ],
   "logs": []
 }
