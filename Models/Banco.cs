@@ -1,49 +1,23 @@
+using parteIII.Models;
+
 namespace parteIII.Models
 {
-    public class Banco
+    public static class Banco
     {
 
-        private double deposito { get; set; }
-        private double saque { get; set; }
-
-
-        public double Deposito
+        public static double sacar(double valorSaque)
         {
-            get { return deposito; }
-            set { this.deposito = value; }
-        }
-        public double Saque
-        {
-            get { return saque; }
-            set { this.saque = value; }
-        }
-
-        public string sacar(Cliente clienteSaque)
-        {
-            if (this.Saque > clienteSaque.Saldo)
+            if (valorSaque > Conta.Saldo)
             {
-                string mensagemFalha = "----Saldo Insuficiente----\n";
-                mensagemFalha += "Saldo atual: " + clienteSaque.Saldo + "\n";
-                mensagemFalha += "Valor Saque: " + this.Saque + "\n";
-                return mensagemFalha;
+                return null;
             }
-            clienteSaque.Saldo -= this.Saque;
-            string Mensagem = "----Saque Realizado----\n";
-            Mensagem += "Saldo atual: " + clienteSaque.Saldo + "\n";
-            Mensagem += "Valor Saque: " + this.Saque + "\n";
-            return Mensagem;
-
+            double valorFinal = valorSaque - Conta.Saldo;
+            return valorFinal;
         }
-        public string depositar(Cliente clienteDeposito)
+        public static string depositar(double valorDeposito)
         {
-
-            clienteDeposito.Saldo += this.Deposito;
-            string mensagemDeposito = "---Deposito Realizado---\n";
-            mensagemDeposito += "Valor deposito: R$" + this.Deposito + "\n";
-            mensagemDeposito += "Saldo: R$" + clienteDeposito.Saldo + "\n";
-
-            return mensagemDeposito;
-
+            double valorFinal = valorDeposito + Conta.Saldo;
+            return valorFinal;
         }
     }
 }

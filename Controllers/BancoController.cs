@@ -17,20 +17,7 @@ namespace parteIII.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Login(Cliente clienteLogin)
-        {
-            var loginCliente = new BancoRepository();
-            loginCliente.Login(clienteLogin);
-            if (loginCliente == null)
-            {
-                ViewBag.Mensagem = "Falha no login";
-                return View();
-            }
-            HttpContext.Session.SetInt32("IdCliente", loginCliente.Id);
-            HttpContext.Session.SetString("NomeCliente", loginCliente.Nome);
-
-            return RedirectToAction("Acesso", "Cliente");
-        }
+       
 
         public IActionResult Produtos()
         {

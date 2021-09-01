@@ -23,10 +23,29 @@ namespace parteIII.Controllers
         public IActionResult Cadastro(Cliente cliente1)
         {
             var cl = new ClienteRepository();
-            cl.Inserir(cliente1);
+            cl.Cadastro(cliente1);
             ViewBag.Mensagem = "Cadastro Realizado";
             return RedirectToAction("CadastroConta", "Conta");
 
+        }
+        public iActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Login(Cliente clienteLogin)
+        {
+            var loginCliente = new ClienteRepository();
+            loginCliente.Login(clienteLogin);
+            if (loginCliente == null)
+            {
+                ViewBag.Mensagem = "Falha no login";
+                return View();
+            }
+            HttpContext.Session.SetInt32("IdCliente", loginCliente.Id);
+            HttpContext.Session.SetString("NomeCliente", loginCliente.Nome);
+
+            return RedirectToAction("Acesso", "Cliente");
         }
 
     }
