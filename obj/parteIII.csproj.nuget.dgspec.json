@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\parteIII.csproj": {}
+    "C:\\Users\\103025\\Documents\\pastaArnaldo\\projetosenac\\parteIII\\parteIII.csproj": {}
   },
   "projects": {
-    "C:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\parteIII.csproj": {
+    "C:\\Users\\103025\\Documents\\pastaArnaldo\\projetosenac\\parteIII\\parteIII.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\parteIII.csproj",
+        "projectUniqueName": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projetosenac\\parteIII\\parteIII.csproj",
         "projectName": "parteIII",
-        "projectPath": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\parteIII.csproj",
+        "projectPath": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projetosenac\\parteIII\\parteIII.csproj",
         "packagesPath": "C:\\Users\\103025\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\obj\\",
+        "outputPath": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projetosenac\\parteIII\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\103025\\AppData\\Roaming\\NuGet\\NuGet.Config"

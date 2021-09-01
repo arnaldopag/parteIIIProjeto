@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RGiGCR3/SYichGAAnZ14q+VulMyH2AcEf10n7y3sGUwVTI0pUv5DVGcuAMDPVn0/ctMORM79ut+/Z+0bhpCUaQ==",
+  "dgSpecHash": "l7Ohd2I0mYgxzWHLolMZnXuN93hIFjGxWuAfaQ0+1TbLCFJ3HjDhuIu/iOZApnOfEPvOLnM7K1GNsMAgkbWCqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projeto senac\\parteIII\\parteIII.csproj",
+  "projectFilePath": "C:\\Users\\103025\\Documents\\pastaArnaldo\\projetosenac\\parteIII\\parteIII.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\103025\\.nuget\\packages\\mysqlconnector\\1.3.11\\mysqlconnector.1.3.11.nupkg.sha512"
   ],

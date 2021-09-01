@@ -13,12 +13,12 @@ namespace parteIII.Controllers
     public class CandidatoController : Controller
     {
 
-        public IactionResult Trabalhe()
+        public IActionResult Trabalhe()
         {
             return View();
         }
         [HttpPost]
-        public IactionResult Trabalhe(Candidato cadastroCandidato)
+        public IActionResult Trabalhe(Candidato cadastroCandidato)
         {
             var candidato = new CandidatoRepository();
             candidato.Cadastro(cadastroCandidato);

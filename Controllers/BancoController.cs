@@ -10,16 +10,10 @@ using parteIII.Models;
 
 namespace parteIII.Controllers
 {
-    public class BancoController : Controller
-    {
-        public IActionResult Login()
-        {
-            return View();
-        }
-        [HttpPost]
-       
+    public class BancoController : Controller{
+        
 
-        public IActionResult Produtos()
+    public IActionResult Produtos()
         {
             return View();
         }
