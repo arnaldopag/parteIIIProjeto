@@ -34,12 +34,8 @@ namespace parteIII.Models
             conexao.Open();
             const string querySql = "select * from cliente WHERE login=@login and senha=@senha";
             var comando = new MySqlCommand(querySql, conexao);
-
-
             comando.Parameters.AddWithValue("@login", clienteLogin.Login);
             comando.Parameters.AddWithValue("@senha", clienteLogin.Senha);
-
-
             MySqlDataReader Reader = comando.ExecuteReader();
 
             Cliente clienteEncontrado = null;
@@ -60,6 +56,27 @@ namespace parteIII.Models
             }
 
             conexao.Close();
+            return clienteEncontrado;
+        }
+
+        public Cliente Mostrar(int id)
+        {
+            var conexao = new MySqlConnection(DadosConexao);
+            conexao.Open();
+            const string querySql = "select * from cliente WHERE id=@id";
+            var comando = new MySqlCommand(querySql, conexao);
+            comando.Parameters.AddWithValue("@id", id);
+            var clienteEncontrado = new Cliente();
+            
+            MySqlDataReader reader = comando.ExecuteReader();
+            reader.Read();
+            clienteEncontrado.Id_cliente = reader.GetInt32("Id");
+            if (!reader.IsDBNull(reader.GetOrdinal("Nome")))
+                clienteEncontrado.Nome = reader.GetString("Nome");
+            if (!reader.IsDBNull(reader.GetOrdinal("Cpf")))
+                clienteEncontrado.Cpf = reader.GetString("Cpf");
+            clienteEncontrado.DataNascimento = reader.GetDateTime("DataNascimento");
+
             return clienteEncontrado;
         }
     }

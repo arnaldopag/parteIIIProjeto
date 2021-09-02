@@ -54,11 +54,38 @@ namespace parteIII.Controllers
         }
         public IActionResult Sacar()
         {
-            throw new NotImplementedException();
+            return View();
+
+        }
+        [HttpPost]
+        public IActionResult Sacar(int idCliente)
+        {
+            var buscarCliente = new ContaRepository(); 
+            Conta contaLocalizada = buscarCliente.LocalizarConta(idCliente);
+            var depositoConta = new Conta();
+            var novoSaldo =  depositoConta.Sacar(contaLocalizada);
+
+            buscarCliente.Saque(contaLocalizada,novoSaldo);
+            
+            return RedirectToAction("Acesso", "Cliente");
         }
         public IActionResult Depositar()
         {
-            throw new NotImplementedException();
+            return View();
         }
+
+        [HttpPost] 
+        public IActionResult Depositar(int idCliente)
+        {
+            var buscarCliente = new ContaRepository(); 
+            Conta contaLocalizada = buscarCliente.LocalizarConta(idCliente);
+            var depositoConta = new Conta();
+            var newSaldo =  depositoConta.Depositar(contaLocalizada);
+
+            buscarCliente.Deposito(contaLocalizada,newSaldo);
+            
+            return RedirectToAction("Acesso", "Cliente");
+        }
+        
     }
 }
