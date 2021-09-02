@@ -4,7 +4,7 @@ namespace parteIII.Models
 {
     public class Cliente
     {
-        private int id { get; set; }
+        private int id_cliente { get; set; }
         private string nome { get; set; }
         private string email { get; set; }
         private string fone { get; set; }
@@ -16,10 +16,10 @@ namespace parteIII.Models
         private DateTime dataNascimento { get; set; }
 
 
-        public int Id
+        public int Id_cliente
         {
-            get => id;
-            set => this.id = value;
+            get => id_cliente;
+            set => this.id_cliente = value;
         }
         public string Nome
         {

@@ -60,15 +60,12 @@ C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteI
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.TagHelpers.input.cache
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.TagHelpers.output.cache
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.RazorCoreGenerate.cache
-C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Banco\Login.cshtml.g.cs
-C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Banco\Produtos.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Acesso.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Cadastro.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Depositar.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Sacar.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Institucional.cshtml.g.cs
-C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Trabalhe.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -82,3 +79,8 @@ C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteI
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.pdb
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.genruntimeconfig.cache
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\parteIII.csproj.CopyComplete
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Candidato\Trabalhe.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Login.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Conta\CadastroConta.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Produtos.cshtml.g.cs
+C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\MySqlConnector.dll

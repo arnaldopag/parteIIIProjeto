@@ -17,7 +17,7 @@ namespace parteIII.Models
             var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@nome", user.Nome);
             comando.Parameters.AddWithValue("@email", user.Email);
-            comando.Parameters.AddWithValue("@nome", user.Fone);
+            comando.Parameters.AddWithValue("@fone", user.Fone);
             comando.Parameters.AddWithValue("@login", user.Login);
             comando.Parameters.AddWithValue("@senha", user.Senha);
             comando.Parameters.AddWithValue("@cpf", user.Cpf);
@@ -47,16 +47,16 @@ namespace parteIII.Models
             if (Reader.Read())
             {
                 clienteEncontrado = new Cliente();
-                clienteEncontrado.Id = Reader.GetInt32("Id");
+                clienteEncontrado.Id_cliente = Reader.GetInt32("id");
 
-                if (!Reader.IsDBNull(Reader.GetOrdinal("Nome")))
-                    clienteEncontrado.Nome = Reader.GetString("Nome");
-                if (!Reader.IsDBNull(Reader.GetOrdinal("Login")))
-                    clienteEncontrado.Login = Reader.GetString("Login");
-                if (!Reader.IsDBNull(Reader.GetOrdinal("Senha")))
-                    clienteEncontrado.Senha = Reader.GetString("Senha");
+                if (!Reader.IsDBNull(Reader.GetOrdinal("nome")))
+                    clienteEncontrado.Nome = Reader.GetString("nome");
+                if (!Reader.IsDBNull(Reader.GetOrdinal("login")))
+                    clienteEncontrado.Login = Reader.GetString("login");
+                if (!Reader.IsDBNull(Reader.GetOrdinal("senha")))
+                    clienteEncontrado.Senha = Reader.GetString("senha");
 
-                clienteEncontrado.DataNascimento = Reader.GetDateTime("DataNascimento");
+                clienteEncontrado.DataNascimento = Reader.GetDateTime("dataNascimento");
             }
 
             conexao.Close();

@@ -1,12 +1,10 @@
 using parteIII.Models;
 namespace parteIIIProjeto.Models
 {
-    public class Banco
+    namespace parteIII.Models
     {
-        namespace parteIII.Models
-    {
-        public class Banco
-        {
+        public class Banco {
+            
             private double valorDeposito { get; set; }
             private double valorSaque { get; set; }
 
@@ -21,22 +19,21 @@ namespace parteIIIProjeto.Models
                 set => valorSaque = value;
             }
 
-            public double Sacar()
+            public double Sacar(Conta setSaldo)
             {
-                if (valorSaque > Conta.Saldo)
-                {
+                if (this.valorSaque > setSaldo.Saldo){
                     return -1;
                 }
-                double valorFinal = this.valorSaque - Conta.Saldo;
-                return valorFinal;
+                return setSaldo.Saldo -= this.valorSaque;
+
+
             }
-            public double Depositar()
+            public double Depositar(Conta setSaldo)
             {
-                Conta.Saldo += this.valorDeposito;
+                setSaldo.Saldo += this.valorDeposito;
                 
-                return Conta.Saldo;
+                return setSaldo.Saldo;
             }
         }
     }
-}
-}
+ }

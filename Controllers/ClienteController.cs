@@ -42,7 +42,7 @@ namespace parteIII.Controllers
                 ViewBag.Mensagem = "Falha no login";
                 return View();
             }
-            HttpContext.Session.SetInt32("IdCliente", clienteValido.Id);
+            HttpContext.Session.SetInt32("IdCliente", clienteValido.Id_cliente);
             HttpContext.Session.SetString("NomeCliente", clienteValido.Nome);
 
             return RedirectToAction("Acesso");
