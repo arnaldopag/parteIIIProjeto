@@ -50,6 +50,13 @@ namespace parteIII.Controllers
 
         public IActionResult Acesso()
         {
+            var idCliente =   (int) HttpContext.Session.GetInt32("IdCliente");
+            var buscarConta = new ContaRepository();
+            var cliente = new ClienteRepository(); 
+            var contaLocalizada = buscarConta.LocalizarConta(idCliente);
+            var clienteLocalizado = cliente.encontratCliente(idCliente);
+            ViewBag.contaLocalizada = contaLocalizada;
+            ViewBag.contaLocalizada = clienteLocalizado;
             return View();
         }
         public IActionResult Sacar()
@@ -60,6 +67,7 @@ namespace parteIII.Controllers
         [HttpPost]
         public IActionResult Sacar(int idCliente)
         {
+             idCliente =  (int) HttpContext.Session.GetInt32("IdCliente");
             var buscarCliente = new ContaRepository(); 
             Conta contaLocalizada = buscarCliente.LocalizarConta(idCliente);
             var depositoConta = new Conta();
@@ -77,6 +85,7 @@ namespace parteIII.Controllers
         [HttpPost] 
         public IActionResult Depositar(int idCliente)
         {
+            idCliente = (int) HttpContext.Session.GetInt32("idCliente");
             var buscarCliente = new ContaRepository(); 
             Conta contaLocalizada = buscarCliente.LocalizarConta(idCliente);
             var depositoConta = new Conta();

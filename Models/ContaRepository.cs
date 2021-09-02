@@ -1,3 +1,4 @@
+using System.Data;
 using MySqlConnector;
 namespace parteIII.Models
 {
@@ -30,9 +31,9 @@ namespace parteIII.Models
             if (Reader.Read())
             {
                 contaEncontrada.Id_conta = Reader.GetInt32("Id");
-                if (!Reader.IsDBNull(Reader.GetOrdinal("Agencia")))
+                if (!Reader.IsDBNull(Reader.GetInt32("Agencia")))
                     contaEncontrada.Agencia = Reader.GetInt32("Agencia");
-                if (!Reader.IsDBNull(Reader.GetOrdinal("Login")))
+                if (!Reader.IsDBNull(Reader.GetInt32("NumeroConta")))
                     contaEncontrada.NumeroConta = Reader.GetInt32("NumeroConta");
                 if (!Reader.IsDBNull(Reader.GetOrdinal("Saldo")))
                     contaEncontrada.Saldo = Reader.GetDouble("Saldo");

@@ -1,16 +1,17 @@
-@model Cliente;
+
 @{
     ViewData["Title"] = "Acesso";
+    parteIII.Models.Conta conta = (parteIII.Models.Conta) ViewBag.contaLocalizada;
+    parteIII.Models.Cliente cliente = (parteIII.Models.Cliente) ViewBag.clienteLocalizado;
 }
-
 <body>
-    <h1>Olá, Cliente.Nome</h1>
+    <h1>Olá,@cliente.Nome </h1>
     <h3>Dados da conta</h3>
-    <p>Conta: 1233</p>
-    <p>Agência: 456</p>
-    <p>Saldo:R$ 20,00</p>
+    <p>Conta:@conta.NumeroConta </p>
+    <p>Agência: @conta.Agencia</p>
+    <p>Saldo:R$@conta.Saldo</p>
 <div>
-    <button class="btn btn-outline-primary"><a href="/Cliente/Depositar">Deposito</a></button>
-    <button class="btn btn-outline-primary"><a href="/Cliente/Sacar"> Saque</a></button>
+    <button class="btn btn-outline-primary"><a href="/Depositar">Deposito</a></button>
+    <button class="btn btn-outline-primary"><a href="/Sacar"> Saque</a></button>
 </div>
 </body>

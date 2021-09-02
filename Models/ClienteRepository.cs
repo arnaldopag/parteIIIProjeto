@@ -59,7 +59,7 @@ namespace parteIII.Models
             return clienteEncontrado;
         }
 
-        public Cliente Mostrar(int id)
+        public Cliente encontratCliente(int id)
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
