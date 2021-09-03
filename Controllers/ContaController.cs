@@ -9,7 +9,7 @@ namespace parteIII.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult CadastrConta(Conta newConta)
+        public IActionResult CadastroConta(Conta newConta)
         {
             var contaCadastro = new ContaRepository();
             contaCadastro.Cadastro(newConta);

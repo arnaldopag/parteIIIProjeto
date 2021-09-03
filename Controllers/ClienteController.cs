@@ -43,16 +43,17 @@ namespace parteIII.Controllers
             return RedirectToAction("Acesso");
         }
 
-        public IActionResult Acesso()
+        public IActionResult Acesso(int id)
         {
-            var idCliente =   (int) HttpContext.Session.GetInt32("IdCliente");
             var buscarConta = new ContaRepository();
-            var cliente = new ClienteRepository(); 
-            var contaLocalizada = buscarConta.LocalizarConta(idCliente);
-            var clienteLocalizado = cliente.encontratCliente(idCliente);
-            ViewBag.contaLocalizada = contaLocalizada;
-            ViewBag.contaLocalizada = clienteLocalizado;
-            return View();
+            var buscarCliente = new ClienteRepository();
+
+            var viewModel = new View
+            {
+                conta = buscarConta.LocalizarConta(id),
+                cliente = buscarCliente.encontratCliente(id)
+            };
+            return View(viewModel);
         }
         public IActionResult Sacar()
         {
@@ -60,11 +61,11 @@ namespace parteIII.Controllers
 
         }
         [HttpPost]
-        public IActionResult Sacar(int idCliente)
+        public IActionResult Sacar(int id)
         {
-             idCliente =  (int) HttpContext.Session.GetInt32("IdCliente");
+            
             var buscarCliente = new ContaRepository(); 
-            Conta contaLocalizada = buscarCliente.LocalizarConta(idCliente);
+            Conta contaLocalizada = buscarCliente.LocalizarConta(id);
             var depositoConta = new Conta();
             var novoSaldo =  depositoConta.Sacar(contaLocalizada);
 
@@ -78,11 +79,10 @@ namespace parteIII.Controllers
         }
 
         [HttpPost] 
-        public IActionResult Depositar(int idCliente)
+        public IActionResult Depositar(int id)
         {
-            idCliente = (int) HttpContext.Session.GetInt32("idCliente");
             var buscarCliente = new ContaRepository(); 
-            Conta contaLocalizada = buscarCliente.LocalizarConta(idCliente);
+            Conta contaLocalizada = buscarCliente.LocalizarConta(id);
             var depositoConta = new Conta();
             var newSaldo =  depositoConta.Depositar(contaLocalizada);
 

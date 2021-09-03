@@ -43,7 +43,7 @@ namespace parteIII.Models
             if (Reader.Read())
             {
                 clienteEncontrado = new Cliente();
-                clienteEncontrado.Id_cliente = Reader.GetInt32("id");
+                clienteEncontrado.Id_cliente = Reader.GetInt32("id_cliente");
 
                 if (!Reader.IsDBNull(Reader.GetOrdinal("nome")))
                     clienteEncontrado.Nome = Reader.GetString("nome");
@@ -63,19 +63,20 @@ namespace parteIII.Models
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
-            const string querySql = "select * from cliente WHERE id=@id";
+            const string querySql = "select * from cliente WHERE id_cliente=@id";
             var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@id", id);
             var clienteEncontrado = new Cliente();
             
             MySqlDataReader reader = comando.ExecuteReader();
-            reader.Read();
-            clienteEncontrado.Id_cliente = reader.GetInt32("Id");
-            if (!reader.IsDBNull(reader.GetOrdinal("Nome")))
-                clienteEncontrado.Nome = reader.GetString("Nome");
-            if (!reader.IsDBNull(reader.GetOrdinal("Cpf")))
-                clienteEncontrado.Cpf = reader.GetString("Cpf");
-            clienteEncontrado.DataNascimento = reader.GetDateTime("DataNascimento");
+            if (reader.Read()){
+                clienteEncontrado.Id_cliente = reader.GetInt32("id_cliente");
+                if (!reader.IsDBNull(reader.GetOrdinal("nome")))
+                    clienteEncontrado.Nome = reader.GetString("nome");
+                if (!reader.IsDBNull(reader.GetOrdinal("cpf")))
+                    clienteEncontrado.Cpf = reader.GetString("cpf");
+                clienteEncontrado.DataNascimento = reader.GetDateTime("dataNascimento");
+            }
 
             return clienteEncontrado;
         }

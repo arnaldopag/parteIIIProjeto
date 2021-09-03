@@ -8,7 +8,7 @@ namespace parteIII.Models
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
-            const string querySql = "insert into candidato (nome,email,fone,dataNascimento) VALUES (@nome,@email,@fone,@datanNascimento)";
+            const string querySql = "insert into candidato (nome,email,fone,dataNascimento) VALUES (@nome,@email,@fone,@dataNascimento)";
             var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@nome", candidato.Nome);
             comando.Parameters.AddWithValue("@email", candidato.Email);
