@@ -7,7 +7,7 @@ namespace parteIII.Models
 {
     public class ClienteRepository
     {
-        private const string DadosConexao = "Database=parte_iii; Data Source=localhost;User id=root";
+        private const string DadosConexao = "Database=banco; Data Source=localhost;User id=root";
 
         public void Cadastro(Cliente user)
         {
@@ -59,7 +59,7 @@ namespace parteIII.Models
             return clienteEncontrado;
         }
 
-        public Cliente encontratCliente(int id)
+        public Cliente EncontrarCliente(int id)
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();

@@ -4,16 +4,17 @@ namespace parteIII.Models
 {
     public class ContaRepository
     {
-        private const string DadosConexao = "Database=parte_iii; Data Source=localhost;User id=root";
-        public void Cadastro(Conta newConta)
+        private const string DadosConexao = "Database=banco; Data Source=localhost;User id=root";
+        public void Cadastro(Conta newConta, int id)
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
-            const string querySql = "INSERT INTO conta (agencia,numero_conta,saldo) VALUES (@agencia,@numero_conta,@saldo)";
+            const string querySql = "INSERT INTO conta (agencia,numero_conta,saldo,id_cliente) VALUES (@agencia,@numero_conta,@saldo,@id_cliente)";
             var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@agencia", newConta.Agencia);
             comando.Parameters.AddWithValue("@numero_conta",newConta.NumeroConta );
             comando.Parameters.AddWithValue("@saldo", newConta.Saldo);
+            comando.Parameters.AddWithValue("@id_cliente", id);
            
             comando.ExecuteNonQuery();
             conexao.Close();

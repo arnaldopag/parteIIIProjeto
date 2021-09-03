@@ -21,9 +21,5 @@ namespace parteIII.Controllers
             return View();
 
         }
-        public IActionResult Produtos()
-        {
-            return View();
-        }
     }
 }

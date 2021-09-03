@@ -40,7 +40,7 @@ namespace parteIII.Controllers
             HttpContext.Session.SetInt32("IdCliente", clienteValido.Id_cliente);
             HttpContext.Session.SetString("NomeCliente", clienteValido.Nome);
 
-            return RedirectToAction("Acesso");
+            return RedirectToAction("CadastroConta" , "Conta");
         }
 
         public IActionResult Acesso(int id)
@@ -51,7 +51,7 @@ namespace parteIII.Controllers
             var viewModel = new View
             {
                 conta = buscarConta.LocalizarConta(id),
-                cliente = buscarCliente.encontratCliente(id)
+                cliente = buscarCliente.EncontrarCliente(id)
             };
             return View(viewModel);
         }

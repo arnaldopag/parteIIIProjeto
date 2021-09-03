@@ -9,11 +9,11 @@ namespace parteIII.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult CadastroConta(Conta newConta)
+        public IActionResult CadastroConta(Conta newConta,int id)
         {
             var contaCadastro = new ContaRepository();
-            contaCadastro.Cadastro(newConta);
-            return RedirectToAction("Login", "Cliente");
+            contaCadastro.Cadastro(newConta, id);
+            return RedirectToAction("Acesso", "Cliente");
         }
     }
 }
