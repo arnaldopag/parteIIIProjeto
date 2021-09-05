@@ -82,7 +82,6 @@ C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteI
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Candidato\Trabalhe.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Login.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Conta\CadastroConta.cshtml.g.cs
-C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\obj\Debug\netcoreapp3.1\Razor\Views\Home\Produtos.cshtml.g.cs
 C:\Users\dinhu\OneDrive\Documentos\cursoSenac\projetointegrador\parte-iii\parteIIIProjeto\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\bin\Debug\netcoreapp3.1\appsettings.json

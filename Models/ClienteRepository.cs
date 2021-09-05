@@ -7,7 +7,7 @@ namespace parteIII.Models
 {
     public class ClienteRepository
     {
-        private const string DadosConexao = "Database=banco; Data Source=localhost;User id=root";
+        private const string DadosConexao = "Database=parte_iii; Data Source=localhost;User id=root";
 
         public void Cadastro(Cliente user)
         {
@@ -24,6 +24,9 @@ namespace parteIII.Models
             comando.Parameters.AddWithValue("@rg", user.Rg);
             comando.Parameters.AddWithValue("@salario", user.Salario);
             comando.Parameters.AddWithValue("@dataNascimento", user.DataNascimento);
+            comando.Parameters.AddWithValue("@agencia", user.Agencia);
+            comando.Parameters.AddWithValue("@numero_conta", user.NumeroConta );
+            comando.Parameters.AddWithValue("@saldo", user.Saldo);
             comando.ExecuteNonQuery();
             conexao.Close();
         }
@@ -75,10 +78,38 @@ namespace parteIII.Models
                     clienteEncontrado.Nome = reader.GetString("nome");
                 if (!reader.IsDBNull(reader.GetOrdinal("cpf")))
                     clienteEncontrado.Cpf = reader.GetString("cpf");
+                if (!reader.IsDBNull(reader.GetInt32("agencia")))
+                    clienteEncontrado.Agencia = reader.GetInt32("agencia");
+                if (!reader.IsDBNull(reader.GetInt32("numero_conta")))
+                    clienteEncontrado.NumeroConta = reader.GetInt32("numero_conta");
+                if (!reader.IsDBNull(reader.GetOrdinal("saldo")))
+                    clienteEncontrado.Saldo = reader.GetDouble("saldo");
                 clienteEncontrado.DataNascimento = reader.GetDateTime("dataNascimento");
             }
 
             return clienteEncontrado;
+        }
+        public void Deposito(Cliente cliente,double valorSaldo)
+        {
+            MySqlConnection conexao = new MySqlConnection(DadosConexao);
+            conexao.Open();
+            const string querySql = "UPDATE cliente SET saldo=@saldo WHERE id_conta=@id";
+            MySqlCommand comando = new MySqlCommand(querySql, conexao);
+            comando.Parameters.AddWithValue("@id", cliente.Id_cliente);
+            comando.Parameters.AddWithValue("@saldo", valorSaldo);
+            comando.ExecuteNonQuery();
+            conexao.Close();
+        }
+        public void Saque(Cliente cliente,double valorSaldo)
+        {
+            MySqlConnection conexao = new MySqlConnection(DadosConexao);
+            conexao.Open();
+            const string querySql = "UPDATE cliente SET saldo=@saldo WHERE id_cliente=@id";
+            MySqlCommand comando = new MySqlCommand(querySql, conexao);
+            comando.Parameters.AddWithValue("@id", cliente.Id_cliente);
+            comando.Parameters.AddWithValue("@saldo", valorSaldo);
+            comando.ExecuteNonQuery();
+            conexao.Close();
         }
     }
 }

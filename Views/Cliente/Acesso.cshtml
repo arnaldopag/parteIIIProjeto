@@ -1,18 +1,18 @@
-@model parteIII.Models.View;
+@model Cliente;
 @{
     ViewData["Title"] = "Acesso";
-    parteIII.Models.Conta conta = Model.conta;
-    parteIII.Models.Cliente cliente = Model.cliente;
+    
+    var cliente = new Cliente();
 }
-<body>
-<h1>Olá,@cliente.Nome </h1>
-<p>CPF: @cliente.Cpf</p>
-<h3>Dados da conta</h3>
-    <p>Conta:@conta.NumeroConta </p>
-    <p>Agência: @conta.Agencia</p>
-    <p>Saldo:R$@conta.Saldo</p>
-<div>
-    <button class="btn btn-outline-primary"><a href="/Cliente/Depositar">Deposito</a></button>
-    <button class="btn btn-outline-primary"><a href="/Cliente/Sacar"> Saque</a></button>
-</div>
-</body>
+ <body>
+    <h1>Olá,@cliente.Nome </h1>
+    <p>CPF: @cliente.Cpf</p>
+    <h3>Dados da conta</h3>
+     <p>Conta:@cliente.NumeroConta </p>
+    <p>Agência: @cliente.Agencia</p>
+    <p>Saldo:R$@cliente.Saldo</p>
+    <div>
+      <button class="btn btn-outline-primary"><a href="/Cliente/Depositar">Deposito</a></button>
+      <button class="btn btn-outline-primary"><a href="/Cliente/Sacar"> Saque</a></button>
+    </div>
+ </body>

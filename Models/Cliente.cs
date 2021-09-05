@@ -14,6 +14,11 @@ namespace parteIII.Models
         private string rg { get; set; }
         private double salario { get; set; }
         private DateTime dataNascimento { get; set; }
+        private int numeroConta { get; set; }
+        private int agencia { get; set; }
+        private double saldo { get; set; }
+        private double valorDeposito { get; set; }
+        private double valorSaque { get; set; }
 
 
         public int Id_cliente
@@ -65,6 +70,47 @@ namespace parteIII.Models
         {
             get => dataNascimento;
             set => this.dataNascimento = value;
+        }
+        public int NumeroConta
+        {
+            get => numeroConta;
+            set => numeroConta = value;
+        }
+        public int Agencia
+        {
+            get => agencia;
+            set => agencia = value;
+        }
+        public double Saldo
+        {
+            get => saldo;
+            set => saldo = value;
+        }
+        public double ValorDeposito
+        {
+            get => valorDeposito;
+            set => valorDeposito = value;
+        }
+        public double ValorSaque
+        {
+            get => valorSaque;
+            set => valorSaque = value;
+        }
+
+        public double Sacar(Cliente setSaldo)
+        {
+            if (this.valorSaque > setSaldo.Saldo){
+                return -1;
+            }
+            double saldoFinal = setSaldo.Saldo - this.valorSaque;
+            return saldoFinal;
+
+
+        }
+        public double Depositar(Cliente setSaldo)
+        {
+            double saldoFinal = setSaldo.saldo + this.saldo;
+            return saldoFinal;
         }
       
 

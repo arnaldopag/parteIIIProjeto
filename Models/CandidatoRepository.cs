@@ -3,7 +3,7 @@ namespace parteIII.Models
 {
     public class CandidatoRepository
     {
-        private const string DadosConexao = "Database=banco; Data Source=localhost;User id=root";
+        private const string DadosConexao = "Database=parte_iii; Data Source=localhost;User id=root";
         public void Cadastro(Candidato candidato)
         {
             var conexao = new MySqlConnection(DadosConexao);

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Set-2021 às 02:28
+-- Tempo de geração: 05-Set-2021 às 21:56
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.4.14
 
@@ -58,36 +58,18 @@ CREATE TABLE `cliente` (
   `cpf` varchar(11) DEFAULT NULL,
   `rg` varchar(10) DEFAULT NULL,
   `salario` double DEFAULT NULL,
-  `dataNascimento` datetime DEFAULT NULL
+  `dataNascimento` datetime DEFAULT NULL,
+  `agencia` int(11) DEFAULT NULL,
+  `numero_conta` int(11) DEFAULT NULL,
+  `saldo` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `cliente`
 --
 
-INSERT INTO `cliente` (`id_cliente`, `nome`, `email`, `fone`, `login`, `senha`, `cpf`, `rg`, `salario`, `dataNascimento`) VALUES
-(6, '1010', '1010', '1010', '1010', '1010', '1010', '1010', 1010, '2010-10-10 00:00:00');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `conta`
---
-
-CREATE TABLE `conta` (
-  `id_conta` int(11) NOT NULL,
-  `agencia` int(11) DEFAULT NULL,
-  `numero_conta` int(11) DEFAULT NULL,
-  `saldo` double DEFAULT NULL,
-  `id_cliente` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `conta`
---
-
-INSERT INTO `conta` (`id_conta`, `agencia`, `numero_conta`, `saldo`, `id_cliente`) VALUES
-(1, 123, 123, 123, NULL);
+INSERT INTO `cliente` (`id_cliente`, `nome`, `email`, `fone`, `login`, `senha`, `cpf`, `rg`, `salario`, `dataNascimento`, `agencia`, `numero_conta`, `saldo`) VALUES
+(6, '1010', '1010', '1010', '1010', '1010', '1010', '1010', 1010, '2010-10-10 00:00:00', NULL, NULL, NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -106,13 +88,6 @@ ALTER TABLE `cliente`
   ADD PRIMARY KEY (`id_cliente`);
 
 --
--- Índices para tabela `conta`
---
-ALTER TABLE `conta`
-  ADD PRIMARY KEY (`id_conta`),
-  ADD KEY `id_cliente` (`id_cliente`);
-
---
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -127,22 +102,6 @@ ALTER TABLE `candidato`
 --
 ALTER TABLE `cliente`
   MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de tabela `conta`
---
-ALTER TABLE `conta`
-  MODIFY `id_conta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Restrições para despejos de tabelas
---
-
---
--- Limitadores para a tabela `conta`
---
-ALTER TABLE `conta`
-  ADD CONSTRAINT `conta_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
