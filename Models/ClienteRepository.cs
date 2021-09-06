@@ -46,7 +46,7 @@ namespace parteIII.Models
             if (Reader.Read())
             {
                 clienteEncontrado = new Cliente();
-                clienteEncontrado.Id_cliente = Reader.GetInt32("id_cliente");
+                clienteEncontrado.Id_cliente = Reader.GetInt32("Id_cliente");
 
                 if (!Reader.IsDBNull(Reader.GetOrdinal("nome")))
                     clienteEncontrado.Nome = Reader.GetString("nome");
