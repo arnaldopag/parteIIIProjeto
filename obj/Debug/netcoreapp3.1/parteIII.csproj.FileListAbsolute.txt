@@ -126,3 +126,4 @@ C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreap
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\parteIII.dll
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\parteIII.pdb
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\parteIII.genruntimeconfig.cache
+C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contato.cshtml.g.cs

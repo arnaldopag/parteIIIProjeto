@@ -1,0 +1,22 @@
+﻿@model Contato;
+
+<form asp-action="Contato" method="POST">
+    <div class="mb-3">
+        <label asp-for="Nome" class="form-label">Nome: </label>
+        <input asp-for="Nome" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email: </label>
+        <input asp-for="Email" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Texto" class="form-label">Fone: </label>
+        <input asp-for="Texto" type="textarea" />
+    </div>
+    <div class="mb-3">
+        <input type="Submit" value="Enviar" class="btn btn-outline-primary">
+    </div>
+</form>
+<p>
+    @ViewBag.Mensagem
+</p>

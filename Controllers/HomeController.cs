@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using parteIII.Models;
 
 
 namespace parteIII.Controllers
@@ -20,6 +21,19 @@ namespace parteIII.Controllers
         {
             return View();
 
+        }
+
+        public IActionResult Contato()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Contato(Contato novoContato)
+        {
+            var contato = new ContatoRepository();
+            contato.Cadastro(novoContato);
+            ViewBag.Mensagem = "Cadastro Realizado";
+            return View();
         }
     }
 }

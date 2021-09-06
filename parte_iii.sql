@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05-Set-2021 às 21:56
--- Versão do servidor: 10.4.17-MariaDB
--- versão do PHP: 7.4.14
+-- Tempo de geração: 06-Set-2021 às 20:59
+-- Versão do servidor: 10.4.21-MariaDB
+-- versão do PHP: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -69,7 +69,27 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id_cliente`, `nome`, `email`, `fone`, `login`, `senha`, `cpf`, `rg`, `salario`, `dataNascimento`, `agencia`, `numero_conta`, `saldo`) VALUES
-(6, '1010', '1010', '1010', '1010', '1010', '1010', '1010', 1010, '2010-10-10 00:00:00', NULL, NULL, NULL);
+(7, 'arnaldo', 'arnaldo', '48999124988', '123', '123', '096', '5698', 1500, '1996-09-17 00:00:00', 0, 0, 0),
+(8, 'a', 'asdf', 'asdf', 'a', 'a', 'a', 'a', 123, '0001-01-01 00:00:00', 123, 123, 123);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `contato`
+--
+
+CREATE TABLE `contato` (
+  `nome` varchar(60) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
+  `texto` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `contato`
+--
+
+INSERT INTO `contato` (`nome`, `email`, `texto`) VALUES
+('asdf', 'asdf', 'asdf');
 
 --
 -- Índices para tabelas despejadas
@@ -101,7 +121,7 @@ ALTER TABLE `candidato`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
