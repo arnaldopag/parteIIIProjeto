@@ -13,7 +13,7 @@ namespace parteIII.Models
         {
             var conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
-            const string querySql = "insert into cliente (nome,email,fone,login,senha,cpf,rg,salario,dataNascimento) values (@nome,@email,@fone,@login,@senha,@cpf,@rg,@salario,@dataNascimento)";
+            const string querySql = "insert into cliente (nome,email,fone,login,senha,cpf,rg,salario,dataNascimento,agencia,numero_conta,saldo) values (@nome,@email,@fone,@login,@senha,@cpf,@rg,@salario,@dataNascimento,@agencia,@numero_conta,@saldo)";
             var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@nome", user.Nome);
             comando.Parameters.AddWithValue("@email", user.Email);
@@ -25,7 +25,7 @@ namespace parteIII.Models
             comando.Parameters.AddWithValue("@salario", user.Salario);
             comando.Parameters.AddWithValue("@dataNascimento", user.DataNascimento);
             comando.Parameters.AddWithValue("@agencia", user.Agencia);
-            comando.Parameters.AddWithValue("@numero_conta", user.NumeroConta );
+            comando.Parameters.AddWithValue("@numero_conta", user.Numero_conta );
             comando.Parameters.AddWithValue("@saldo", user.Saldo);
             comando.ExecuteNonQuery();
             conexao.Close();
@@ -54,6 +54,12 @@ namespace parteIII.Models
                     clienteEncontrado.Login = Reader.GetString("login");
                 if (!Reader.IsDBNull(Reader.GetOrdinal("senha")))
                     clienteEncontrado.Senha = Reader.GetString("senha");
+                if (!Reader.IsDBNull(Reader.GetOrdinal("agencia")))
+                    clienteEncontrado.Agencia = Reader.GetInt32("agencia");
+                if (!Reader.IsDBNull(Reader.GetOrdinal("numero_conta")))
+                    clienteEncontrado.Numero_conta = Reader.GetInt32("numero_conta");
+                if (!Reader.IsDBNull(Reader.GetOrdinal("saldo")))
+                    clienteEncontrado.Saldo = Reader.GetDouble("saldo");
 
                 clienteEncontrado.DataNascimento = Reader.GetDateTime("dataNascimento");
             }
@@ -70,7 +76,6 @@ namespace parteIII.Models
             var comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@id", id);
             var clienteEncontrado = new Cliente();
-            
             MySqlDataReader reader = comando.ExecuteReader();
             if (reader.Read()){
                 clienteEncontrado.Id_cliente = reader.GetInt32("id_cliente");
@@ -81,7 +86,7 @@ namespace parteIII.Models
                 if (!reader.IsDBNull(reader.GetInt32("agencia")))
                     clienteEncontrado.Agencia = reader.GetInt32("agencia");
                 if (!reader.IsDBNull(reader.GetInt32("numero_conta")))
-                    clienteEncontrado.NumeroConta = reader.GetInt32("numero_conta");
+                    clienteEncontrado.Numero_conta = reader.GetInt32("numero_conta");
                 if (!reader.IsDBNull(reader.GetOrdinal("saldo")))
                     clienteEncontrado.Saldo = reader.GetDouble("saldo");
                 clienteEncontrado.DataNascimento = reader.GetDateTime("dataNascimento");
@@ -93,7 +98,7 @@ namespace parteIII.Models
         {
             MySqlConnection conexao = new MySqlConnection(DadosConexao);
             conexao.Open();
-            const string querySql = "UPDATE cliente SET saldo=@saldo WHERE id_conta=@id";
+            const string querySql = "UPDATE cliente SET saldo=@saldo WHERE id_cliente=@id";
             MySqlCommand comando = new MySqlCommand(querySql, conexao);
             comando.Parameters.AddWithValue("@id", cliente.Id_cliente);
             comando.Parameters.AddWithValue("@saldo", valorSaldo);

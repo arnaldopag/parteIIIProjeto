@@ -111,7 +111,6 @@ C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreap
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Depositar.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Login.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Sacar.cshtml.g.cs
-C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Conta\CadastroConta.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Home\Institucional.cshtml.g.cs
 C:\Users\103025\Documents\pastaArnaldo\projetosenac\parteIII\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs

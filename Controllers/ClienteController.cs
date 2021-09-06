@@ -15,10 +15,10 @@ namespace parteIII.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Cadastro(Cliente cliente1)
+        public IActionResult Cadastro(Cliente cliente)
         {
             var cl = new ClienteRepository();
-            cl.Cadastro(cliente1);
+            cl.Cadastro(cliente);
             ViewBag.Mensagem = "Cadastro Realizado";
             return RedirectToAction("Login");
 
@@ -51,38 +51,38 @@ namespace parteIII.Controllers
           
             return View(clienteEncontrado);
         }
-        public IActionResult Sacar()
+        public IActionResult Sacar(int id)
         {
-            return View();
+            var buscarCliente = new ClienteRepository(); 
+            var contaLocalizada = buscarCliente.EncontrarCliente(id);
+            return View(contaLocalizada);
 
         }
         [HttpPost]
-        public IActionResult Sacar(int id)
+        public IActionResult Sacar(Cliente contaLocalizada)
         {
-            
-            var buscarCliente = new ClienteRepository(); 
-            var contaLocalizada = buscarCliente.EncontrarCliente(id);
-            var depositoConta = new Cliente();
-            var novoSaldo =  depositoConta.Sacar(contaLocalizada);
-
-            buscarCliente.Saque(contaLocalizada,novoSaldo);
+            var contaSaque = new ClienteRepository();
+            var saqueConta = new Cliente();
+            var novoSaldo =  saqueConta.Sacar(contaLocalizada);
+            contaSaque.Saque(contaLocalizada,novoSaldo);
             
             return RedirectToAction("Acesso", "Cliente");
         }
-        public IActionResult Depositar()
-        {
-            return View();
-        }
-
-        [HttpPost] 
         public IActionResult Depositar(int id)
         {
             var buscarCliente = new ClienteRepository(); 
             var contaLocalizada = buscarCliente.EncontrarCliente(id);
-            var depositoConta = new Cliente();
-            var novoSaldo =  depositoConta.Depositar(contaLocalizada);
+            return View(contaLocalizada);
 
-            buscarCliente.Deposito(contaLocalizada,novoSaldo);
+        }
+
+        [HttpPost] 
+        public IActionResult Depositar(Cliente contaLocalizada)
+        {
+            var contaDeposito = new ClienteRepository();
+            var saqueConta = new Cliente();
+            var novoSaldo =  saqueConta.Depositar(contaLocalizada);
+            contaDeposito.Deposito(contaLocalizada,novoSaldo);
             
             return RedirectToAction("Acesso", "Cliente");
         }

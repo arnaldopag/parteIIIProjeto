@@ -14,7 +14,7 @@ namespace parteIII.Models
         private string rg { get; set; }
         private double salario { get; set; }
         private DateTime dataNascimento { get; set; }
-        private int numeroConta { get; set; }
+        private int numero_conta { get; set; }
         private int agencia { get; set; }
         private double saldo { get; set; }
         private double valorDeposito { get; set; }
@@ -71,10 +71,10 @@ namespace parteIII.Models
             get => dataNascimento;
             set => this.dataNascimento = value;
         }
-        public int NumeroConta
+        public int Numero_conta
         {
-            get => numeroConta;
-            set => numeroConta = value;
+            get => numero_conta;
+            set => numero_conta = value;
         }
         public int Agencia
         {
